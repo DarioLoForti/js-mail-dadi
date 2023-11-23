@@ -10,16 +10,24 @@ let my_email =prompt("Inserisci la tua email");
 
 // 3 - confronto che l'email inserita nel promt sia presente tra quelle dell'arrey
 
+let flag = false;
+
 for(let i = 0; i<emails.length; i++){
     // console.log(emails[i])
 
     if(my_email === emails[i]){
-        
-        console.log("Accesso confermato");
-    }
-
-    else{
-        console.log("Acceesso negato");
+        flag = true
     }
     
+}
+//  3.1 - ? presente stampo un messaggio approvazione
+
+if(flag == true){
+ 
+    console.log("accesso Consentito ");
+}
+//  3.2 - : stampo un messaggio di negazione
+
+else{
+    console.log("Accesso Negato ");
 }
